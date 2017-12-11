@@ -1,0 +1,113 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.main-hamburger {
+    position: absolute;
+    top: 50px;
+    right: 28px;
+    height: 2px;
+    width: 24px;
+    background: #d0d0d0;
+  }
+.main-hamburger::before, .main-hamburger::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 24px;
+    display: block;
+    background: #d0d0d0;
+}
+.main-hamburger::before {
+    top: -8px;
+}
+.main-hamburger::after {
+    top: 8px;
+}
+nav {
+    padding: 14px;
+    overflow: hidden;
+}
+.nav-left {
+    padding: 8px ;
+    float: left;
+}
+.nav-left h1 {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 48px;
+}
+a {
+    text-decoration: none;
+    color: #575757;
+}
+.nav-left img {
+    width: 50px;
+    height: 50px;
+}
+.nav-right {
+    float: right;
+}
+ul li {
+    display: inline-block;
+    padding: 25px 15px;
+    list-style: none;
+    font-size: 24px;
+}
+h2 {
+    text-align: center;
+    color: #ffff;
+    font-size: 48px;
+}
+.bg-header {
+    background-image: url("../assets/images/centro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem 0;
+}
+  .section-1 p,h3,button{
+      padding: 8px;
+  }
+  h3 {
+      font-size: 32px;
+  }
+  button{
+      border-radius: 3px;
+      background: #1fa4b6;
+      color: #FFFF;
+      padding: 0 10px;
+  }
+  .section-2 img, p,button{
+    padding:12px 0px;
+  }
+ .section-2 img {
+     width: 300px;
+     height: 200px;
+     border-radius: 5px;
+ }
+ footer{
+     margin-top: 15px;
+     background: rgba(0, 0, 0, 0.678);
+     color: #d0d0d0;
+     text-align: center;
+ }
+ @media (min-width: 0px) and (max-width: 930px){
+    .view-mobile {
+        display: block;
+    }
+    .view-desktop {
+        display: none;
+    }
+ }
+ @media (min-width: 931px) and (max-width: 2000px){
+    .view-mobile {
+        display: none;
+    }
+    .view-desktop {
+        display: block;
+    }
+}
+
